@@ -124,6 +124,10 @@ div#algo {
     outline: none;
     box-shadow:0 0 0 3px #dde9ec;
 }
+	.contacto input[type='email']:focus, .contacto textarea:focus{
+    outline: none;
+    box-shadow:0 0 0 3px #dde9ec;
+}
 .contacto input[type='submit']{
     border: 1px solid #CED5D7;
     box-shadow:0 0 0 3px #EEF5F7;
@@ -229,11 +233,11 @@ div#algo {
 	  <div id="contenedor">
 		<center>
 	      <form class='contacto'>
-			<div><label>* Full Name:</label><input type='text' value='' required></div>
+			<div><label>* Full Name:</label><input type='text' value='' maxlength="45" required></div>
 			<div><label>* Email:</label><input type="email" value='' required></div>
-			<div><label>* Subject:</label><input type='text' value='' required></div>
-			<div><label>* Message:</label><textarea rows='6' required ></textarea></div>
-			<div><input type='submit' value='Send' onclick="send()"></div>
+			<div><label>* Subject:</label><input type='text' value='' maxlength="15" required></div>
+			<div><label>* Message:</label><textarea rows='6' maxlength="255" required ></textarea></div>
+			<div><input type='submit' value='Send' ></div>
 		</form>
 			</div>	
 			  </center>
