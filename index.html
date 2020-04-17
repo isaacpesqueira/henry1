@@ -208,20 +208,7 @@ div#algo {
    <div class="container">
      <div class="contInfo">
        <div class="info">
-         <p><img src="https://i.ibb.co/BLcv1CS/wallp.jpg" alt="wallp" border="0"></a></p>
-       </div>
-     </div>
-	
-	
-          <a class="boton"  onclick="contact_form()">Contact an advisor</a>
-        
-	    
-	    </div>
- </section>
-</div>
-		
-		  <div id="contenedor" class="clearfix">
-			  <center>
+	       	  <center>
 	      <form class='contacto'>
 			<div><label>* Full Name:</label><input type='text' value=''></div>
 			<div><label>* Email:</label><input type='text' value=''></div>
@@ -230,6 +217,21 @@ div#algo {
 			<div><input type='submit' value='Send'></div>
 		</form>
 			  </center>
+	       
+         <p id='imagen'><img src="https://i.ibb.co/BLcv1CS/wallp.jpg" alt="wallp" border="0"></a></p>
+       </div>
+     </div>
+	
+	
+          <a  id="contact" class="boton"  onclick="contact_form()">Contact an advisor</a>
+        
+	    
+	    </div>
+ </section>
+</div>
+		
+		  <div id="contenedor" class="clearfix">
+		
 
 </div>
 		
@@ -259,7 +261,8 @@ div#algo {
 </body>
 <script>
 function contact_form() {
-  document.getElementById("contenedor").style.display = 'block';
+  document.getElementById("contact").style.display = 'block';
+	  document.getElementById("imagen").style.display = 'none';
 }
 	function funcion() {
   document.getElementById("contenedor").style.display = 'none';
