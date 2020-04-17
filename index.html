@@ -213,7 +213,7 @@ div#algo {
      </div>
 	
 	
-          <a class="boton" target="_self" rel="" href="/contacto" title="">Contacta a un asesor</a>
+          <a class="boton" target="_self" rel="" href="/contacto" title="" onclick="contact_form()">Contact an advisor</a>
         
 	    
 	    </div>
@@ -255,6 +255,10 @@ div#algo {
 
 
 </body>
-
+<script>
+function contact_form() {
+  document.getElementById("contenedor").style.display = 'none';
+}
+</script>
 
 </html>
