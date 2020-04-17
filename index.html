@@ -68,7 +68,30 @@ div#algo {
 	
 	}
 	
-	
+	#contenedor {
+ text-align: left;
+ width: 100%;
+ margin: auto;
+}
+
+#lateral {
+ width: 20%;  /* Este será el ancho que tendrá tu columna */
+ background-color: #CCCCCC;  /* Aquí pon el color del fondo que quieras para este lateral */
+ float:right; /* Aquí determinas de lado quieres quede esta "columna" */
+}
+
+#principal {
+ width: 75%;
+ float: left;
+ background-color: #FFFFFF;
+ border:#000000 1px solid; /* ponemos un donde para que se vea bonito */
+}
+/* Para limpiar los floats */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 	
 	
 </style>
